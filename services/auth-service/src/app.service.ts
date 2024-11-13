@@ -1,8 +1,11 @@
 import { Injectable } from '@nestjs/common';
 
+import { sharedFunction, sharedDto } from '@ptera/shared-utils';
+
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    console.log(sharedDto);
+    return sharedFunction();
   }
 }

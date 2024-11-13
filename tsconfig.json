@@ -1,5 +1,8 @@
 {
 	"compilerOptions": {
+		"paths": {
+			"@ptera/*": ["packages/*/src"]
+		},
 		"module": "commonjs",
 		"declaration": true,
 		"removeComments": true,
